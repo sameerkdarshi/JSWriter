@@ -1,5 +1,6 @@
 # Writer
 ### Simple text editor using JavaScript
+### Visit Project Page [here](https://sameerkdarshi.github.io/JSWriter/)
 
 ## To run this locally
 - Fork and Clone the repository
