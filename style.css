@@ -1,20 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+
 #textEditor{
-    margin: 0 auto;
-    width: 750px;
-    height: 300px;
+    width: 100%;
+    height: calc(100vh - 70px);
 }
 #ribbon{
-    border-bottom: none;
-    padding: 10px;
-    background-color: cadetblue;    
+    height: auto !important;
+    min-height: 55px !important;
+    padding: 0 57px;
+    background-color: #282828;    
     color: white;
     border-radius: 8px 8px 0px 0px;
+    box-sizing: border-box;
 }
 #ribbon > button{
+    position: relative;
+    width: 47px;
+    height: 47px;
+    margin: 4px 2px;
     color: white;
     border:none;
+    border-radius: 5.5px;
     outline: none;
     background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; 
     cursor: pointer;
 }
 #ribbon > button:hover{
@@ -24,7 +37,7 @@
 #richTextArea{
     border: 2px solid rgb(40, 110, 89);
     height: 100%;
-    width: 746px;
+    width: 100%;
 }
 #WYSIWYG{
     height: 100%;
@@ -36,3 +49,14 @@ input[type="color"]{
     outline: none;
     background-color: transparent;
 }
+#textArea{
+    height: 100%;
+    width: 100%;
+}
+.topright {
+    position: absolute;
+    top: 15px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+  }

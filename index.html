@@ -8,15 +8,18 @@
 <body>
     <div id="textEditor">
         <div id="ribbon">
-            <button id="undoButton" title="Undo previos action">&larr;</button>
+            <button id="undoButton" title="Undo previous action">&larr;</button>
             <button id="redoButton" title="Redo">&rarr;</button>
-            <button id="boldButton" title="Bold"><b>B</b></button>
+            <button id="boldButton" title="Bold" ><h1<b>B</b></h1></button>
             <button id="italicButton" title="Italic"><em>I</em></button>
             <button id="orderedListButton" title="Number List">(i)</button>
             <button id="unorderedListButton" title="Bullet List">&bull;</button>
+            Font color
             <input type="color" id="fontColorButton" title="Change Font color">
+            Highlight
             <input type="color" id="highlightButton" title="Highlight Text">
 
+            Font
             <select id="fontChanger">
                 <option value="Times New Roman">Times New Roman</option>
                 <option value="Monospace">Monospace</option>
@@ -30,6 +33,7 @@
                     }
                 </script>
             </select>
+            <img src="icons/activity-stop.svg" alt="Stop" class="topright">
         </div>
         <div id="richTextArea">
             <iframe id="textArea" name="textArea" frameborder="0"></iframe>
@@ -37,6 +41,4 @@
     </div>
     <script src="app.js"></script>
 </body>
-
-
 </html>
