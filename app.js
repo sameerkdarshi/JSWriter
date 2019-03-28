@@ -44,3 +44,18 @@ window.addEventListener("load", function () {
     }, false);
 
 }, false);
+
+function printDiv(divName) {
+    
+    var printContents = document.getElementById(divName).contentWindow.document.body.innerHTML;
+    var originalContents = document.body.innerHTML;
+    var originalIframe = printContents;
+
+    document.body.innerHTML = printContents;
+    window.print();
+
+    document.body.innerHTML = originalContents;
+    document.getElementById(divName).contentWindow.document.body.innerHTML = originalIframe;
+    var editor = textArea.document;
+    editor.designMode = "on";
+}
